@@ -72,4 +72,8 @@ button {
   height: 120px;
   width: 250px;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  15px;
 }

@@ -1,17 +1,33 @@
+const calcular = document.getElementById("calcular");
+
 function calculate() {
-  const inputName = document.getElementById('name').value;  
+  const inputName = document.getElementById("name").value;
   const inputHeigth = document.getElementById("height").value;
   const inputWeigth = document.getElementById("weight").value;
-  const inputImc = (inputWeigth / (inputHeigth**2)).toFixed(0)
-  const result = document.getElementById('result')
-  const imc = inputImc
+  const result = document.getElementById("result");
 
-  
+  if (inputName !== "" && inputHeigth !== "" && inputWeigth !== "") {
+    const valueImc = (inputWeigth / inputHeigth ** 2).toFixed(0);
+    let condition = "";
 
-  result.innerHTML = imc
-  
+    if (valueImc < 18.5) {
+      condition = "abaixo do peso";
+    } else if (valueImc < 25) {
+      condition = "com peso normal";
+    } else if (valueImc < 29.9) {
+      condition = "com sobrepeso";
+    } else if (valueImc < 34.9) {
+      condition = "com obesidade grau I"
+    } else if (valueImc < 40) {
+      condition = "com obesidade grau II"
+    } else if (valueImc > 40) {
+      condition = "com obesidade grau III"
+    }
+
+    result.textContent = `${inputName} seu IMC é ${valueImc} e voçê está ${condition}`;
+  } else {
+    result.textContent = "Preencha todos os campos!";
+  }
 }
 
-
-
-button.addEventListener('click', calculate)
+calcular.addEventListener("click", calculate);
