@@ -15,7 +15,7 @@ body {
 .container {
   background: #d76f3e;
   width: 400px;
-  height: 600px;
+  height: 620px;
   margin: 5px;
 }
 
@@ -47,6 +47,7 @@ input {
   outline: none;
   text-align: center;
   cursor: pointer;
+  
 }
 
 .result {
@@ -71,26 +72,36 @@ label {
 }
 
 button {
-  background-color: #000000;
+  background-color: #d4b02e;
   width: 260px;
   height: 40px;
   margin-top: 20px;
   font-size: 20px;
-  color: #d76f3e;
+  color: #e9470d;
+  border: 2px solid #6b6a65;
 }
 
 .result {
   margin-top: 30px;
-  height: 120px;
+  height: 100px;
   width: 260px;
-  color: #ffffff;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px;
   font-size: 20px;
+  background-color: #d4b02e;
+  border: 2px solid #6b6a65;
 }
 
 .single-input {
   display: flex;
 }
+
+.inputs {
+  outline: none;
+  border: 2px solid #6b6a65;
+  background-color: #d4b02e;
+}
+

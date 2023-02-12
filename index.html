@@ -14,33 +14,37 @@
 
   <body>
     <div class="container">
+      
       <div class="container-itens">
         <header>Calculadora - IMC</header>
         <div class="itens">
 
           <div class="single-input">
             <label class="form-label" for="name">Nome:</label>
-            <input required class="input" type="text" id="name"  />
+            <input  class="inputs" type="text" id="name"  />
           </div>
 
           <div class="single-input">
             <label class="form-label" for="height">Altura:</label>
-            <input required class="input" type="number" id="height" />
+            <input  class="inputs" type="number" id="height" />
           </div>
 
           <div class="single-input">
             <label class="form-label" for="weight">Peso:</label>
-            <input required class="input" type="number" id="weight" />
+            <input  class="inputs" type="number" id="weight" />
           </div>
         </div>
         <div>
           <button id="calcular" >Calcular</button>
         </div>
+        <div>
+          <button type="reset" onclick="reset()">Limpar</button>
+        </div>
         
         <div class="result" id="result"></div>
       </div>
     </div>
-
+  
     <script src="script.js"></script>
   </body>
 </html>
