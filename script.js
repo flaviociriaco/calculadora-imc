@@ -45,3 +45,5 @@ function reset() {
   const result = document.querySelector("#result");
   result.textContent = '';
 }
+
+
